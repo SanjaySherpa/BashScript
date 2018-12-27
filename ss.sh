@@ -1,5 +1,5 @@
 #!/bin/sh
-df>sanjay.txt
+df>/home/adminuser/sanjay.txt
 max=90
 usage=$(awk '{sum+=$5} END {print sum}' sanjay.txt)
 if [ $usage -lt $max ]
